@@ -1,0 +1,5 @@
+fonts/
+out/
+venv/
+tex/*.png
+tex/node_modules/

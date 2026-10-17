@@ -1,0 +1,26 @@
+@font-face{font-family:"AX";src:url("../fonts/Archivo[wdth,wght].ttf");font-weight:100 900;font-stretch:62% 125%}
+@font-face{font-family:"IS";src:url("../fonts/InstrumentSerif-Regular.ttf")}
+@font-face{font-family:"IS";font-style:italic;src:url("../fonts/InstrumentSerif-Italic.ttf")}
+@font-face{font-family:"DM";src:url("../fonts/DMMono-Regular.ttf");font-weight:400}
+@font-face{font-family:"DM";src:url("../fonts/DMMono-Medium.ttf");font-weight:500}
+@font-face{font-family:"DM";src:url("../fonts/DMMono-Light.ttf");font-weight:300}
+@font-face{font-family:"Caveat";src:url("../fonts/Caveat[wght].ttf");font-weight:400 700}
+@font-face{font-family:"Nanum";src:url("../fonts/NanumPenScript-Regular.ttf")}
+@font-face{font-family:"Kalam";src:url("../fonts/Kalam-Regular.ttf")}
+@font-face{font-family:"Homemade";src:url("../fonts/HomemadeApple-Regular.ttf")}
+@font-face{font-family:"Reenie";src:url("../fonts/ReenieBeanie.ttf")}
+@font-face{font-family:"Saint";src:url("../fonts/MrsSaintDelafield-Regular.ttf")}
+@font-face{font-family:"Herr";src:url("../fonts/HerrVonMuellerhoff-Regular.ttf")}
+@font-face{font-family:"Monsieur";src:url("../fonts/MonsieurLaDoulaise-Regular.ttf")}
+@font-face{font-family:"Alex";src:url("../fonts/AlexBrush-Regular.ttf")}
+@font-face{font-family:"Pinyon";src:url("../fonts/PinyonScript-Regular.ttf")}
+html,body{margin:0;padding:0;background:transparent}
+*{box-sizing:border-box}
+@font-face{font-family:"Haviland";src:url("../fonts/MrDeHaviland-Regular.ttf")}
+@font-face{font-family:"Qwigley";src:url("../fonts/Qwigley-Regular.ttf")}
+@font-face{font-family:"Kristi";src:url("../fonts/Kristi-Regular.ttf")}
+@font-face{font-family:"Zeyada";src:url("../fonts/Zeyada.ttf")}
+@font-face{font-family:"Dawning";src:url("../fonts/DawningofaNewDay.ttf")}
+@font-face{font-family:"Cedar";src:url("../fonts/Cedarville-Cursive.ttf")}
+@font-face{font-family:"Aurore";src:url("../fonts/LaBelleAurore.ttf")}
+@font-face{font-family:"Sacra";src:url("../fonts/Sacramento-Regular.ttf")}

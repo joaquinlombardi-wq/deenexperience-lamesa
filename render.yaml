@@ -1,0 +1,16 @@
+# Render Blueprint: el sitio estático de La Mesa by Deenex.
+# En Render: New → Blueprint → este repo, o el botón "Deploy to Render" del README.
+services:
+  - type: web
+    name: la-mesa-deenex
+    runtime: static
+    buildCommand: bash render-build.sh
+    staticPublishPath: ./dist
+    pullRequestPreviewsEnabled: false
+    headers:
+      - path: /*
+        name: X-Robots-Tag
+        value: noindex, nofollow
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff

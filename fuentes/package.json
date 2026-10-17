@@ -1,0 +1,13 @@
+{
+  "name": "la-mesa-sitio",
+  "private": true,
+  "description": "Fuentes del sitio de La Mesa by Deenex: componentes, tokens y pre-render del index.html.",
+  "scripts": {
+    "build": "node build.cjs && python3 tokens-css.py tokens.json ../assets/css/tokens.css .. && node ssr.cjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.24.2",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
+}

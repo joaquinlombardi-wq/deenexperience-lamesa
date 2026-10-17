@@ -1,0 +1,30 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="fonts.css"><style>
+body{width:4096px;height:4096px;background:#000;color:#fff;position:relative;overflow:hidden}
+.q{position:absolute;left:600px;top:760px;transform:rotate(-2.4deg);transform-origin:left top;font-family:Caveat;font-weight:600;font-size:250px;line-height:1.02}
+.q div{white-space:nowrap}
+.q span{display:inline-block}
+.sig{position:absolute;white-space:nowrap}
+svg{position:absolute;overflow:visible}
+svg path{fill:none;stroke:#fff;stroke-linecap:round}
+</style></head><body>
+<div class="q" id="q">
+ <div><span>“Antes</span> <span>de</span> <span>comprar</span></div>
+ <div style="margin-left:40px"><span>cualquier</span> <span>tecnología,</span></div>
+ <div style="margin-left:-10px"><span>primero</span> <span>hay</span> <span>que</span> <span>ordenar</span></div>
+ <div style="margin-left:30px"><span>los</span> <span>datos</span> <span>de</span> <span>venta.”</span></div>
+</div>
+<div class="sig" style="left:520px;top:2280px;font-family:Saint;font-size:250px;transform:rotate(-8deg)">Martín Etcheverry</div>
+<div class="sig" style="left:1950px;top:2180px;font-family:Herr;font-size:330px;transform:rotate(-4deg)">Julián Paz</div>
+<div class="sig" style="left:3000px;top:2330px;font-family:Haviland;font-size:250px;transform:rotate(-10deg)">Goldstein</div>
+<div class="sig" style="left:650px;top:2830px;font-family:Qwigley;font-size:300px;transform:rotate(-5deg)">Carla Méndez</div>
+<div class="sig" style="left:1980px;top:2800px;font-family:Zeyada;font-size:230px;transform:rotate(-7deg)">F. Iturralde</div>
+<div class="sig" style="left:3040px;top:2860px;font-family:Dawning;font-size:200px;transform:rotate(-3deg)">S. Ibarra</div>
+<div class="sig" style="left:3130px;top:3150px;font-family:Caveat;font-weight:500;font-size:92px;transform:rotate(-4deg)">(experto)</div>
+<svg style="left:560px;top:2620px" width="10" height="10"><path d="M0 40 C 300 10, 700 -10, 1150 -60" stroke-width="9"/></svg>
+<svg style="left:2020px;top:2560px" width="10" height="10"><path d="M0 30 C 200 60, 520 10, 760 -40 C 790 -46, 700 20, 640 26" stroke-width="10"/></svg>
+<svg style="left:2010px;top:3090px" width="10" height="10"><path d="M0 20 Q 400 -20 780 -90" stroke-width="7"/></svg>
+<script>
+let s=7;const R=()=>{s=(s*9301+49297)%233280;return s/233280};
+document.querySelectorAll('.q span').forEach(e=>{e.style.transform=`translateY(${(R()-.5)*22}px) rotate(${(R()-.5)*2.2}deg)`;e.style.fontWeight=560+Math.round(R()*90)});
+</script>
+</body></html>

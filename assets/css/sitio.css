@@ -1,0 +1,19 @@
+/* La Mesa by Deenex — ajustes de la página sobre la-mesa.css. Una sola estética: la noche. */
+:root { color-scheme: dark; }
+html { background: var(--surface-ground); scroll-padding-top: var(--space-6); }
+body { margin: 0; background: var(--surface-ground); color: var(--text-primary); font-family: var(--font-sans); }
+.sitio-stack { display: grid; gap: clamp(40px, 6vw, 72px); }
+.sitio-h .lm-sh__title { scroll-margin-top: var(--space-8); }
+
+/* gutters that also clear a phone's side system bars */
+.lm-wrap { padding-left: max(var(--gutter), env(safe-area-inset-left, 0px)); padding-right: max(var(--gutter), env(safe-area-inset-right, 0px)); }
+.lm-footer { padding-left: max(var(--gutter), env(safe-area-inset-left, 0px)); padding-right: max(var(--gutter), env(safe-area-inset-right, 0px)); }
+@media (max-width: 999px) {
+  .lm-hero__copy { padding-left: max(var(--gutter), env(safe-area-inset-left, 0px)); padding-right: max(var(--gutter), env(safe-area-inset-right, 0px)); }
+}
+
+.sitio-skip { position: absolute; z-index: 20; left: max(16px, env(safe-area-inset-left, 0px)); top: -80px; padding: 10px 14px;
+  background: var(--accent-fill); color: var(--accent-on); font-family: var(--font-mono); font-size: 12px; letter-spacing: .16em; text-transform: uppercase; text-decoration: none; border-radius: var(--radius-hair); }
+.sitio-skip:focus { top: calc(16px + env(safe-area-inset-top, 0px)); outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+::selection { background: var(--accent-fill); color: var(--accent-on); }
+a { color: var(--text-accent); }
