@@ -2,11 +2,14 @@
 # En Render: New → Blueprint → este repo, o el botón "Deploy to Render" del README.
 services:
   - type: web
-    name: la-mesa-deenex
+    name: deenexperience-lamesa
     runtime: static
     buildCommand: bash render-build.sh
     staticPublishPath: ./dist
     pullRequestPreviewsEnabled: false
+    envVars:
+      - key: SITE_URL
+        value: https://deenexperience-lamesa.onrender.com
     headers:
       - path: /*
         name: X-Robots-Tag

@@ -12,13 +12,15 @@ python3 -m http.server 8000   # o: npx serve .
 
 Abrí http://localhost:8000.
 
-## Publicarlo en Render
+## Publicado en Render
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/joaquinlombardi-wq/deenexperience-lamesa)
+El sitio está en **https://deenexperience-lamesa.onrender.com** (Static Site `deenexperience-lamesa`). Cada push a `main` se despliega solo.
 
-El botón lee `render.yaml` y crea un *Static Site* llamado `la-mesa-deenex`; Render le da una URL del tipo `https://la-mesa-deenex.onrender.com`. El build (`render-build.sh`) publica solo el sitio, no `fuentes/`, y usa esa URL para la imagen al compartir. Cada push a la rama vuelve a desplegar.
+- *Build Command*: `bash render-build.sh`. Copia solo el sitio a `dist/` (no `fuentes/`) y usa la variable `SITE_URL` para que la imagen al compartir el link tenga la URL completa.
+- *Publish Directory*: `dist`.
+- Si le agregás un dominio propio, cambiá `SITE_URL` en *Environment* del servicio.
 
-A mano: en Render, **New → Static Site**, elegí este repo y la rama `main`, poné `bash render-build.sh` como *Build Command* y `dist` como *Publish Directory*.
+Para recrearlo desde cero: en Render, **New → Blueprint** con este repo (lee `render.yaml`), o **New → Static Site** con los dos valores de arriba y la rama `main`.
 
 ## Publicarlo en otro lado
 
@@ -27,7 +29,7 @@ También se puede subir la carpeta tal cual a Netlify (arrastrar y soltar), Verc
 Antes de hacerlo público:
 
 - **Indexación.** El `index.html` lleva `<meta name="robots" content="noindex, nofollow">` porque el contenido es un documento interno de trabajo (marcas candidatas, partners a definir). Sacalo de `index.html` y de `fuentes/index.template.html` cuando quieras que aparezca en buscadores.
-- **Imagen para compartir.** En Render se completa sola. En otro hosting, cambiá la ruta relativa de `og:image` (`assets/img/og-la-mesa.jpg`) por la URL absoluta del dominio final para que se vea al compartir el link.
+- **Imagen para compartir.** En Render se completa con `SITE_URL`. En otro hosting, cambiá la ruta relativa de `og:image` (`assets/img/og-la-mesa.jpg`) por la URL absoluta del dominio final para que se vea al compartir el link.
 - **Fotografía.** Las imágenes son renders de referencia, no fotos de la noche: las firmas de la servilleta y los platos de la pantalla son ficticios. Cuando haya fotografía real, reemplazá los archivos de `assets/img/fotos/` con los mismos nombres.
 
 ## Qué hay en cada lugar
